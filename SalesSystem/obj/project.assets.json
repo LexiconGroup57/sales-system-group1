@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\matti\\.nuget\\packages\\": {},
+    "C:\\Users\\jimpa\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matti\\Documents\\Projects\\SalesSystem\\SalesSystem\\SalesSystem.csproj",
+      "projectUniqueName": "C:\\Users\\jimpa\\OneDrive\\Utbildning\\v34\\code\\sales-system-group1\\SalesSystem\\SalesSystem.csproj",
       "projectName": "SalesSystem",
-      "projectPath": "C:\\Users\\matti\\Documents\\Projects\\SalesSystem\\SalesSystem\\SalesSystem.csproj",
-      "packagesPath": "C:\\Users\\matti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matti\\Documents\\Projects\\SalesSystem\\SalesSystem\\obj\\",
+      "projectPath": "C:\\Users\\jimpa\\OneDrive\\Utbildning\\v34\\code\\sales-system-group1\\SalesSystem\\SalesSystem.csproj",
+      "packagesPath": "C:\\Users\\jimpa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jimpa\\OneDrive\\Utbildning\\v34\\code\\sales-system-group1\\SalesSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\matti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jimpa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
