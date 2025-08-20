@@ -10,29 +10,67 @@ public class Snacks
     public decimal Price { get; set; } = 0.0m;
     public int Weight { get; set; } = 0;
     public int Vat { get; set; } = 0;
-    
-    public static void SnacksLoader() {
+
+    public static void SnacksLoader()
+    {
         List<Snacks> snacks = new List<Snacks>();
-        using (StreamReader reader = new StreamReader("Snacks.txt")) {
-            string line;
-            while ((line = reader.ReadLine()) != null) {
-                var parts = line.Split(',');
-                if (parts.Length == 4) {
-                    var snack = new Snacks {
-                        Name = parts[0].Trim(),
-                        Price = decimal.Parse(parts[1].Trim()),
-                        Weight = int.Parse(parts[2].Trim()),
-                        Vat = int.Parse(parts[3].Trim())
+        using (StreamReader reader = new StreamReader("Snacks.txt"))
+        {
+            string nameLine, weightLine, priceLine, vatLine;
+            while ((nameLine = reader.ReadLine()) != null)
+            {
+                // Skip empty lines
+                if (string.IsNullOrWhiteSpace(nameLine))
+                    continue;
+
+                weightLine = reader.ReadLine();
+                priceLine = reader.ReadLine();
+                vatLine = reader.ReadLine();
+
+                if (weightLine == null || priceLine == null || vatLine == null)
+                    break; // Incomplete snack entry
+
+                try
+                {
+                    var snack = new Snacks
+                    {
+                        Name = nameLine.Replace("Item:", "").Trim(),
+                        Weight = int.Parse(weightLine.Replace("Weight:", "").Replace("g", "").Trim()),
+                        Price = decimal.Parse(priceLine.Replace("Price:", "").Trim()),
+                        Vat = int.Parse(vatLine.Replace("Vat:", "").Replace("%", "").Trim())
                     };
                     snacks.Add(snack);
                 }
-
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error parsing snack entry: {ex.Message}");
+                }
             }
         }
-        Console.WriteLine("HEJ");
-        foreach (var snack in snacks)
+
+        Console.WriteLine("Snacks Menu:");
+        for (int i = 0; i < snacks.Count; i++)
         {
-            Console.WriteLine($"Name: {snack.Name}, Price: {snack.Price:C}, Weight: {snack.Weight}g, VAT: {snack.Vat}%");
+            var snack = snacks[i];
+            Console.WriteLine($"{i + 1}. {snack.Name} - {snack.Price:C} ({snack.Weight}g, VAT: {snack.Vat}%)");
+        }
+
+        Console.Write("Choose a snack by number: ");
+        string? input = Console.ReadLine();
+        if (int.TryParse(input, out int choice) && choice >= 1 && choice <= snacks.Count)
+        {
+            var selectedSnack = snacks[choice - 1];
+            Console.WriteLine($"You chose: {selectedSnack.Name}\nPrice: {selectedSnack.Price:C}\nWeight: {selectedSnack.Weight}g\nVAT: {selectedSnack.Vat}%");
+
+            // Save selection to summary.txt
+            using (StreamWriter sw = new StreamWriter("summary.txt", append: true))
+            {
+                sw.WriteLine($"{selectedSnack.Name},{selectedSnack.Price},{selectedSnack.Weight},{selectedSnack.Vat}");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid choice.");
         }
     }
 }

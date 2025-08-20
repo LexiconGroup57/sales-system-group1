@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace SalesSystem
 {
     internal class Menu
-    { 
+    {
         public void Show()
         {
             while (true)
             {
                 Console.Clear();
-                
+
                 Console.WriteLine("==== Main Menu ====");
                 Console.WriteLine("1. Movies");
                 Console.WriteLine("2. Snacks");
@@ -38,7 +38,31 @@ namespace SalesSystem
                         Console.ReadKey();
                         break;
                     case "3":
-                        Console.WriteLine("Summary option selected. (To be implemented)");
+                        Console.WriteLine("Summary option selected.");
+                        if (File.Exists("summary.txt"))
+                        {
+                            var lines = File.ReadAllLines("summary.txt");
+                            if (lines.Length == 0)
+                            {
+                                Console.WriteLine("No snacks have been selected yet.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Your snack selections:");
+                                foreach (var line in lines)
+                                {
+                                    var parts = line.Split(',');
+                                    if (parts.Length == 4)
+                                    {
+                                        Console.WriteLine($"Name: {parts[0]}, Price: {parts[1]} SEK, Weight: {parts[2]}g, VAT: {parts[3]}%");
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("No snacks have been selected yet.");
+                        }
                         Console.WriteLine("Press any key to return to menu...");
                         Console.ReadKey();
                         break;
