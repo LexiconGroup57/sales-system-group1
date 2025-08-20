@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace SalesSystem
 {
     internal class Menu
-    {
+    { 
         public void Show()
         {
             while (true)
             {
                 Console.Clear();
-
+                
                 Console.WriteLine("==== Main Menu ====");
                 Console.WriteLine("1. Movies");
                 Console.WriteLine("2. Snacks");
@@ -32,7 +32,8 @@ namespace SalesSystem
                         Console.ReadKey();
                         break;
                     case "2":
-                        Console.WriteLine("Snacks option selected. (To be implemented)");
+                        Console.WriteLine("Snacks option selected.");
+                        Snacks.SnacksLoader();
                         Console.WriteLine("Press any key to return to menu...");
                         Console.ReadKey();
                         break;
