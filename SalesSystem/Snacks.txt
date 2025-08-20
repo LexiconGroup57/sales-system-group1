@@ -1,0 +1,9 @@
+﻿Item: Ahlgrens bilar 
+Weight: 125g 
+Price: 22
+Vat: 12% 
+
+Item: Popcorn och Coca-Cola
+Weight: 200g
+Price: 43
+Vat: 12%
