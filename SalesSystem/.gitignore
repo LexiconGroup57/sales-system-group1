@@ -1,4 +1,29 @@
 ../.vs/
 /bin/
 /obj/
-/.idea/
+.idea/
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Rider project files
+.idea/
+.idea.SalesSystem/
+
+# Visual Studio Code
+.vscode/
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Other common ignores
+*.log
+*.DS_Store
+Thumbs.db
