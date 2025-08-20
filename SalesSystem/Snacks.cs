@@ -13,8 +13,15 @@ public class Snacks
 
     public static void SnacksLoader()
     {
+        // Adjust filepath
+        string projectRoot = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", ".."));
+
+        // Set file paths for snacks and summary files in project root
+        string snacksFilePath = Path.Combine(projectRoot, "Snacks.txt");
+        string summaryFilePath = Path.Combine(projectRoot, "summary.txt");
+
         List<Snacks> snacks = new List<Snacks>();
-        using (StreamReader reader = new StreamReader("Snacks.txt"))
+        using (StreamReader reader = new StreamReader(snacksFilePath))
         {
             string nameLine, weightLine, priceLine, vatLine;
             while ((nameLine = reader.ReadLine()) != null)
@@ -63,8 +70,9 @@ public class Snacks
             Console.WriteLine($"You chose: {selectedSnack.Name}\nPrice: {selectedSnack.Price:C}\nWeight: {selectedSnack.Weight}g\nVAT: {selectedSnack.Vat}%");
 
             // Save selection to summary.txt
-            using (StreamWriter sw = new StreamWriter("summary.txt", append: true))
+            using (StreamWriter sw = new StreamWriter(summaryFilePath, append: true))
             {
+
                 sw.WriteLine($"{selectedSnack.Name},{selectedSnack.Price},{selectedSnack.Weight},{selectedSnack.Vat}");
             }
         }
