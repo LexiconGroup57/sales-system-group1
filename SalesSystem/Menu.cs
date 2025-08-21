@@ -8,17 +8,10 @@ namespace SalesSystem
 {
     internal class Menu
     {
-        public void Payment()
-        {
-            Console.Clear();
-            Console.WriteLine("==== Payment ====");
-
-            // Read the summary file1
-
-
-        }
         public void Show()
         {
+            // Load movies once for the session
+            var movies = Movies.ReadMovies("movies.txt");
             while (true)
             {
                 Console.Clear();
@@ -39,8 +32,7 @@ namespace SalesSystem
                 switch (input)
                 {
                     case "1":
-                        Movies.ShowMoviesList("movies.txt");
-                        Console.WriteLine("Movie option selected. (To be implemented)");
+                        Movies.ShowMoviesList(movies);
                         Console.WriteLine("Press any key to return to menu...");
                         Console.ReadKey();
                         break;

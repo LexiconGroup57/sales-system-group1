@@ -1,72 +1,98 @@
-Tuesday 18:00,
-Furiosa: A Mad Max Saga
-2024 R 2h 28m
-After being snatched from the Green Place of Many Mothers, while the tyrants Dementus and
-Immortan Joe fight for power and control, the young Furiosa must survive many trials as she puts
-together the means to find her way home.
+day: Tuesday
+time: 18:00
+title: Furiosa: A Mad Max Saga
+year: 2024
+rating: R
+duration: 2h 28m
+description: After being snatched from the Green Place of Many Mothers, while the tyrants Dementus and Immortan Joe fight for power and control, the young Furiosa must survive many trials as she puts together the means to find her way home.
+seats: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
 
-Saturday 21:00,
-Furiosa: A Mad Max Saga
-2024 R 2h 28m
-After being snatched from the Green Place of Many Mothers, while the tyrants Dementus and
-Immortan Joe fight for power and control, the young Furiosa must survive many trials as she puts
-together the means to find her way home.
+day: Saturday
+time: 21:00
+title: Furiosa: A Mad Max Saga
+year: 2024
+rating: R
+duration: 2h 28m
+description: After being snatched from the Green Place of Many Mothers, while the tyrants Dementus and Immortan Joe fight for power and control, the young Furiosa must survive many trials as she puts together the means to find her way home.
+seats: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
 
-Thursday 21:00,
-Dog Day Afternoon
-1975 R 2h 5m
-Three amateur robbers plan to hold up a Brooklyn bank. A nice, simple robbery: Walk in, take the
-money, and run. Unfortunately, the supposedly uncomplicated heist suddenly becomes a bizarre
-nightmare as everything that could go wrong does.
+day: Thursday
+time: 21:00
+title: Dog Day Afternoon
+year: 1975
+rating: R
+duration: 2h 5m
+description: Three amateur robbers plan to hold up a Brooklyn bank. A nice, simple robbery: Walk in, take the money, and run. Unfortunately, the supposedly uncomplicated heist suddenly becomes a bizarre nightmare as everything that could go wrong does.
+seats: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
 
-Tuesday 21:00,
-The Fall Guy
-2024 PG-13 2h 6m
-A stuntman fresh off an almost career-ending accident, has to track down a missing movie star,
-solve a conspiracy and try to win back the love of his life while still doing his day job.
+day: Tuesday
+time: 21:00
+title: The Fall Guy
+year: 2024
+rating: PG-13
+duration: 2h 6m
+description: A stuntman fresh off an almost career-ending accident, has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.
+seats: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
 
-Friday 21:00,
-The Fall Guy
-2024 PG-13 2h 6m
-A stuntman fresh off an almost career-ending accident, has to track down a missing movie star,
-solve a conspiracy and try to win back the love of his life while still doing his day job.
+day: Friday
+time: 21:00
+title: The Fall Guy
+year: 2024
+rating: PG-13
+duration: 2h 6m
+description: A stuntman fresh off an almost career-ending accident, has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.
+seats: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
 
-Wednesday 18:00,
-Iron Man 3
-2013 PG-13 2h 10m
-When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an
-odyssey of rebuilding and retribution.
+day: Wednesday
+time: 18:00
+title: Iron Man 3
+year: 2013
+rating: PG-13
+duration: 2h 10m
+description: When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.
+seats: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
 
-Saturday 13:00,
-Iron Man 3
-2013 PG-13 2h 10m
-When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an
-odyssey of rebuilding and retribution.
+day: Saturday
+time: 13:00
+title: Iron Man 3
+year: 2013
+rating: PG-13
+duration: 2h 10m
+description: When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.
+seats: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
 
-Friday 18:00,
-Civil War
-2024 R 1h 49m
-In a dystopian future, four journalists travel across the United States during a nation-wide conflict.
-While trying to survive, they aim to reach the White House to interview the president before he is
-overthrown.
+day: Friday
+time: 18:00
+title: Civil War
+year: 2024
+rating: R
+duration: 1h 49m
+description: In a dystopian future, four journalists travel across the United States during a nation-wide conflict. While trying to survive, they aim to reach the White House to interview the president before he is overthrown.
+seats: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
 
-Saturday 18:00,
-Civil War
-2024 R 1h 49m
-In a dystopian future, four journalists travel across the United States during a nation-wide conflict.
-While trying to survive, they aim to reach the White House to interview the president before he is
-overthrown.
+day: Saturday
+time: 18:00
+title: Civil War
+year: 2024
+rating: R
+duration: 1h 49m
+description: In a dystopian future, four journalists travel across the United States during a nation-wide conflict. While trying to survive, they aim to reach the White House to interview the president before he is overthrown.
+seats: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
 
-Wednesday 21:00,
-The Room Next Door
-2024 PG-13 1h 47m
-Ingrid and Martha were close friends in their youth, when they worked together at the same
-magazine. After years of being out of touch, they meet again in an extreme but strangely sweet
-situation.
+day: Wednesday
+time: 21:00
+title: The Room Next Door
+year: 2024
+rating: PG-13
+duration: 1h 47m
+description: Ingrid and Martha were close friends in their youth, when they worked together at the same magazine. After years of being out of touch, they meet again in an extreme but strangely sweet situation.
+seats: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
 
-Thursday 18:00,
-The Room Next Door
-2024 PG-13 1h 47m
-Ingrid and Martha were close friends in their youth, when they worked together at the same
-magazine. After years of being out of touch, they meet again in an extreme but strangely sweet
-situation.
+day: Thursday
+time: 18:00
+title: The Room Next Door
+year: 2024
+rating: PG-13
+duration: 1h 47m
+description: Ingrid and Martha were close friends in their youth, when they worked together at the same magazine. After years of being out of touch, they meet again in an extreme but strangely sweet situation.
+seats: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
