@@ -73,7 +73,7 @@ namespace SalesSystem
                 string summaryFilePath = Path.Combine(projectRoot, "summary.txt");
                 using (StreamWriter sw = new StreamWriter(summaryFilePath, append: true))
                 {
-                    sw.WriteLine($"{selectedMovie.Name},{selectedMovie.Price}");
+                    sw.WriteLine($"Movies,{selectedMovie.Name},{selectedMovie.Price}");
                 }
             }
             else

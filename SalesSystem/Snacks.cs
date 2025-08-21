@@ -43,7 +43,7 @@ public class Snacks
                     {
                         Name = nameLine.Replace("Item:", "").Trim(),
                         Weight = int.Parse(weightLine.Replace("Weight:", "").Replace("g", "").Trim()),
-                        Price = decimal.Parse(priceLine.Replace("Price:", "").Trim()),
+                        Price = decimal.Parse(priceLine.Replace("Price:", "").Trim()), 
                         Vat = int.Parse(vatLine.Replace("Vat:", "").Replace("%", "").Trim())
                     };
                     snacks.Add(snack);
@@ -73,7 +73,7 @@ public class Snacks
             using (StreamWriter sw = new StreamWriter(summaryFilePath, append: true))
             {
 
-                sw.WriteLine($"{selectedSnack.Name},{selectedSnack.Price},{selectedSnack.Weight},{selectedSnack.Vat}");
+                sw.WriteLine($"Snacks,{selectedSnack.Name},{selectedSnack.Price}");
             }
         }
         else

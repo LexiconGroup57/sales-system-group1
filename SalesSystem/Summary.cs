@@ -20,21 +20,25 @@ namespace SalesSystem
                foreach (var line in lines)
                {
                   var parts = line.Split(',');
-                  if (parts.Length == 4)
+                  if (parts.Length == 3)
                   {
-                     // Snacks: Name, Price, Weight, VAT
-                     Console.WriteLine($"Snack: {parts[0]}, Price: {parts[1]} SEK, Weight: {parts[2]}g, VAT: {parts[3]}%");
+                     
+
+
+
+                  parts[0] = parts[0].Trim();
+                     if (parts[0].Equals("Movies", StringComparison.OrdinalIgnoreCase))
+                     {
+                        // Movies: Name, Price
+                        Console.WriteLine($"Movie: {parts[1]} Price: {parts[2]} SEK");
+                     }
+                     else if (parts[0].Equals("Snacks", StringComparison.OrdinalIgnoreCase))
+                     {
+                        // Snacks: Name, Price
+                        Console.WriteLine($"Snack: {parts[1]} Price: {parts[2]} SEK");
+                     }
                   }
-                  else if (parts.Length == 2)
-                  {
-                     // Movie: Name, Price
-                     Console.WriteLine($"Movie: {parts[0]}, Price: {parts[1]} SEK");
-                  }
-                  else if (line.StartsWith("Movie:"))
-                  {
-                     // Old format, just print
-                     Console.WriteLine(line);
-                  }
+                  
                }
             }
          }
