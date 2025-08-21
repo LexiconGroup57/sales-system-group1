@@ -13,5 +13,11 @@
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
     </ItemGroup>
+    <ItemGroup>
+      <None Remove="movies.txt" />
+      <Content Include="movies.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
 
 </Project>

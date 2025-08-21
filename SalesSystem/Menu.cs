@@ -8,6 +8,15 @@ namespace SalesSystem
 {
     internal class Menu
     {
+        public void Payment()
+        {
+            Console.Clear();
+            Console.WriteLine("==== Payment ====");
+
+            // Read the summary file1
+
+
+        }
         public void Show()
         {
             while (true)
@@ -18,15 +27,19 @@ namespace SalesSystem
                 Console.WriteLine("1. Movies");
                 Console.WriteLine("2. Snacks");
                 Console.WriteLine("3. Summary");
-                Console.WriteLine("4. Quit");
-                Console.WriteLine("5. Hej");
+                Console.WriteLine("4. Pay");
+                Console.WriteLine("5. Quit");
 
                 Console.Write("Choose an option: ");
+
+                string projectRoot = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", ".."));
+                string summaryFilePath = Path.Combine(projectRoot, "summary.txt");
 
                 string? input = Console.ReadLine();
                 switch (input)
                 {
                     case "1":
+                        Movies.ShowMoviesList("movies.txt");
                         Console.WriteLine("Movie option selected. (To be implemented)");
                         Console.WriteLine("Press any key to return to menu...");
                         Console.ReadKey();
@@ -39,30 +52,7 @@ namespace SalesSystem
                         break;
                     case "3":
                         Console.WriteLine("Summary option selected.");
-                        if (File.Exists("summary.txt"))
-                        {
-                            var lines = File.ReadAllLines("summary.txt");
-                            if (lines.Length == 0)
-                            {
-                                Console.WriteLine("No snacks have been selected yet.");
-                            }
-                            else
-                            {
-                                Console.WriteLine("Your snack selections:");
-                                foreach (var line in lines)
-                                {
-                                    var parts = line.Split(',');
-                                    if (parts.Length == 4)
-                                    {
-                                        Console.WriteLine($"Name: {parts[0]}, Price: {parts[1]} SEK, Weight: {parts[2]}g, VAT: {parts[3]}%");
-                                    }
-                                }
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine("No snacks have been selected yet.");
-                        }
+                        Summary.ShowSummary(summaryFilePath);
                         Console.WriteLine("Press any key to return to menu...");
                         Console.ReadKey();
                         break;
