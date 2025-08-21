@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SalesSystem;
 
 namespace SalesSystem
 {
@@ -49,6 +50,8 @@ namespace SalesSystem
                         Console.ReadKey();
                         break;
                     case "4":
+                        Payment.ClearSummary(summaryFilePath);
+                        Console.WriteLine("Payment complete. Summary cleared.");
                         Console.WriteLine("Goodbye!");
                         return;
                     default:
