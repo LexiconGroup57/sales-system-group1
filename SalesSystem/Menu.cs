@@ -15,14 +15,21 @@ namespace SalesSystem
             var movies = Movies.ReadMovies("movies.txt");
             while (true)
             {
-                Console.Clear();
+                try
+                {
+                    Console.Clear();
+                }
+                catch (IOException)
+                {
+                    // Ignore if console clear is not supported
+                }
 
                 Console.WriteLine("==== Main Menu ====");
                 Console.WriteLine("1. Movies");
                 Console.WriteLine("2. Snacks");
                 Console.WriteLine("3. Summary");
                 Console.WriteLine("4. Pay");
-                Console.WriteLine("5. Quit");
+                Console.WriteLine("5. Sales Log");
 
                 Console.Write("Choose an option: ");
 
@@ -54,8 +61,15 @@ namespace SalesSystem
                         Payment.SaveSummaryToSalesLog(summaryFilePath, salesLogFilePath);
                         Payment.ClearSummary(summaryFilePath);
                         Console.WriteLine("Payment complete. Summary cleared.");
-                        Console.WriteLine("Goodbye!");
-                        return;
+                        Console.WriteLine("Press any key to return to menu...");
+                        Console.ReadKey();
+                        break;
+                        case "5":
+                            var salesLog = new SalesLog(salesLogFilePath);
+                            salesLog.ShowLog();
+                            Console.WriteLine("Press any key to return to menu...");
+                            Console.ReadKey();
+                            return;
                     default:
                         Console.WriteLine("Invalid option. Try again.");
                         Console.ReadKey();

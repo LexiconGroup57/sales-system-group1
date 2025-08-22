@@ -84,7 +84,14 @@ namespace SalesSystem
 
         public static void ShowMoviesList(List<MovieInfo> movies)
         {
-            Console.Clear();
+            try
+            {
+                Console.Clear();
+            }
+            catch (IOException)
+            {
+                // Ignore if console clear is not supported
+            }
             Console.WriteLine("==== Movies List ====");
             for (int i = 0; i < movies.Count; i++)
             {
