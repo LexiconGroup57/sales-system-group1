@@ -15,7 +15,11 @@ namespace SalesSystem
                     string? line;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        writer.WriteLine(line);
+                        if (!string.IsNullOrWhiteSpace(line))
+                        {
+                            string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                            writer.WriteLine($"{timestamp},{line}");
+                        }
                     }
                 }
             }

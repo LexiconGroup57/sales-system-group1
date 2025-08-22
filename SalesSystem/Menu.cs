@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +28,7 @@ namespace SalesSystem
 
                 string projectRoot = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", ".."));
                 string summaryFilePath = Path.Combine(projectRoot, "summary.txt");
+                string salesLogFilePath = Path.Combine(projectRoot, "sales_log.txt");
 
                 string? input = Console.ReadLine();
                 switch (input)
@@ -50,6 +51,7 @@ namespace SalesSystem
                         Console.ReadKey();
                         break;
                     case "4":
+                        Payment.SaveSummaryToSalesLog(summaryFilePath, salesLogFilePath);
                         Payment.ClearSummary(summaryFilePath);
                         Console.WriteLine("Payment complete. Summary cleared.");
                         Console.WriteLine("Goodbye!");
